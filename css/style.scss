@@ -1,0 +1,217 @@
+// Variables
+
+$font-fancy: 'Alegreya', serif;
+$font-body: 'Source Sans Pro', sans-serif;
+
+$color-accent-lighter: #FF8A80;
+$color-accent: #C62828;
+$color-light: #EF9A9A;
+$color-lightest: #FFEBEE;
+$color-dark: #B71C1C;
+
+
+// Global Styles
+
+body {
+  font: {
+    family: $font-body;
+  }
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  border-bottom: 3px solid $color-dark;
+  color: $color-dark;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    border-bottom: 3px solid #000000;
+  }
+
+}
+
+::-moz-selection {
+  background: $color-accent;
+  color: #FFFFFF;
+}
+
+::selection {
+  background: $color-accent;
+  color: #FFFFFF;
+}
+
+
+// Top Bar Styles
+
+/* .candy-cane {
+  background: repeating-linear-gradient(
+  -45deg,
+  $color-accent-lighter,
+  $color-accent-lighter 10px,
+  $color-accent 10px,
+  $color-accent 20px
+  );
+  height: 0.25rem;
+} */
+
+
+// Header Styles
+
+header {
+  background-attachment: fixed;
+  background-color: $color-accent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b71c1c' fill-opacity='0.75'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 3rem 0;
+
+  h1 {
+    color: white;
+    font: {
+      family: $font-fancy;
+      size: 12vw;
+      weight: 900;
+    }
+    line-height: calc(0.5em + 12vw);
+    margin-bottom: calc(0.313rem + 1vw);
+  }
+
+  span {
+    color: $color-accent-lighter;
+    font: {
+      size: 1.25rem;
+    }
+    letter-spacing: 2;
+    text-transform: uppercase;
+  }
+
+}
+
+
+// Section Styles
+
+section {
+  padding: 4rem 1rem;
+
+  h2 {
+    color: $color-accent;
+    font: {
+      size: calc(1rem + 1.5vw);
+      weight: 700;
+    }
+    letter-spacing: 2;
+    text-transform: uppercase;
+  }
+
+  ul,
+  ol,
+  p {
+    font: {
+      family: $font-fancy;
+      size: calc(1.25rem + 1.5vw);
+      style: italic;
+      weight: 400;
+    }
+
+    li {
+      line-height: 1.5;
+      margin-top: 2rem;
+    }
+
+  }
+
+  p,
+  iframe {
+    margin-top: 2rem;
+  }
+
+  ol {
+    list-style: none;
+    counter-reset: item 6;
+
+    li {
+      counter-increment: item -1;
+
+      &::before {
+        content: counter(item) ". ";
+
+        color: $color-light;
+        font: {
+          family: $font-body;
+          size: 1.25rem;
+          style: normal;
+          weight: 400;
+        }
+        margin-right: 0.5rem;
+
+      }
+
+    }
+
+  }
+
+  &.quotes li,
+  .pretty-quote {
+
+    &:before {
+      content: "“";
+      margin-right: 0.313rem;
+    }
+
+    &:before,
+    &:after {
+      color: $color-light;
+    }
+
+    &:after {
+      content: "”";
+      margin-left: 0.313rem;
+    }
+
+  }
+
+  .number {
+    color: $color-light;
+    font: {
+      family: $font-body;
+      size: 1.5rem;
+      style: normal;
+      weight: 400;
+    }
+    margin-left: 0.5rem;
+  }
+
+}
+
+footer {
+  background-attachment: fixed;
+  background-color: $color-lightest;
+  background-color: #ffebee;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 4rem 1rem;
+
+  span {
+    color: $color-accent-lighter;
+    font: {
+      size: 1.25rem;
+    }
+    letter-spacing: 2;
+    text-transform: uppercase;
+  }
+
+}
+
+
+// Media Queries
+
+@media screen and (min-width: 1080px) {
+
+  main {
+    padding: 4rem 0;
+  }
+
+}

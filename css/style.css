@@ -1,0 +1,126 @@
+@charset "UTF-8";
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+a {
+  border-bottom: 3px solid #B71C1C;
+  color: #B71C1C;
+  text-decoration: none;
+  transition: all 0.3s ease-in; }
+  a:hover {
+    border-bottom: 3px solid #000000; }
+
+::-moz-selection {
+  background: #C62828;
+  color: #FFFFFF; }
+
+::selection {
+  background: #C62828;
+  color: #FFFFFF; }
+
+/* .candy-cane {
+  background: repeating-linear-gradient(
+  -45deg,
+  $color-accent-lighter,
+  $color-accent-lighter 10px,
+  $color-accent 10px,
+  $color-accent 20px
+  );
+  height: 0.25rem;
+} */
+header {
+  background-attachment: fixed;
+  background-color: #C62828;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b71c1c' fill-opacity='0.75'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 3rem 0; }
+  header h1 {
+    color: white;
+    font-family: "Alegreya", serif;
+    font-size: 12vw;
+    font-weight: 900;
+    line-height: calc(0.5em + 12vw);
+    margin-bottom: calc(0.313rem + 1vw); }
+  header span {
+    color: #FF8A80;
+    font-size: 1.25rem;
+    letter-spacing: 2;
+    text-transform: uppercase; }
+
+section {
+  padding: 4rem 1rem; }
+  section h2 {
+    color: #C62828;
+    font-size: calc(1rem + 1.5vw);
+    font-weight: 700;
+    letter-spacing: 2;
+    text-transform: uppercase; }
+  section ul,
+  section ol,
+  section p {
+    font-family: "Alegreya", serif;
+    font-size: calc(1.25rem + 1.5vw);
+    font-style: italic;
+    font-weight: 400; }
+    section ul li,
+    section ol li,
+    section p li {
+      line-height: 1.5;
+      margin-top: 2rem; }
+  section p,
+  section iframe {
+    margin-top: 2rem; }
+  section ol {
+    list-style: none;
+    counter-reset: item 6; }
+    section ol li {
+      counter-increment: item -1; }
+      section ol li::before {
+        content: counter(item) ". ";
+        color: #EF9A9A;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        margin-right: 0.5rem; }
+  section.quotes li:before,
+  section .pretty-quote:before {
+    content: "“";
+    margin-right: 0.313rem; }
+  section.quotes li:before, section.quotes li:after,
+  section .pretty-quote:before,
+  section .pretty-quote:after {
+    color: #EF9A9A; }
+  section.quotes li:after,
+  section .pretty-quote:after {
+    content: "”";
+    margin-left: 0.313rem; }
+  section .number {
+    color: #EF9A9A;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 0.5rem; }
+
+footer {
+  background-attachment: fixed;
+  background-color: #FFEBEE;
+  background-color: #ffebee;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 4rem 1rem; }
+  footer span {
+    color: #FF8A80;
+    font-size: 1.25rem;
+    letter-spacing: 2;
+    text-transform: uppercase; }
+
+@media screen and (min-width: 1080px) {
+  main {
+    padding: 4rem 0; } }
+
+/*# sourceMappingURL=style.css.map */
