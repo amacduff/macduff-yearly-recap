@@ -23,6 +23,8 @@ a {
   background: #C62828;
   color: #FFFFFF; }
 
+@-ms-viewport {
+  width: device-width; }
 /* .candy-cane {
   background: repeating-linear-gradient(
   -45deg,
